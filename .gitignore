@@ -1,0 +1,26 @@
+# Queue folders — runtime data, not source code
+pending/
+in-progress/
+completed/
+
+# Processed/failed tickets — keep structure but not history
+processed/
+failed/
+
+# Logs
+logs/
+
+# Build artifacts
+Run-Setup/QbiqRenderDispatcher/bin/
+Run-Setup/QbiqRenderDispatcher/obj/
+
+# Temp files
+*.tmp.*
+*.tmp
+
+# Cowork session exports (not part of the project)
+cowork-export/
+
+# Windows
+Thumbs.db
+desktop.ini

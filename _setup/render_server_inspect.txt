@@ -1,0 +1,593 @@
+qbiq Render Dispatcher - Render server inspection
+Generated: 2026-04-30 15:38:06
+
+
+================================================================
+ 0. IDENTIDAD
+================================================================
+Computer:     3DMASTER
+User:         Eitan Abaud
+UserHome:     C:\Users\Eitan Abaud
+PSVersion:    5.1.26100.8115
+Windows:      Microsoft Windows 11 Home (build 26200)
+Install date: 12/16/2024 5:02:46 PM
+Last boot:    4/30/2026 11:39:11 AM
+Manufacturer: LENOVO
+Model:        82RB
+Domain:       WORKGROUP
+RAM (GB):     31.7
+
+================================================================
+ 1. REVIT 2024
+================================================================
+[OK]   Revit 2024 install                       C:\Program Files\Autodesk\Revit 2024
+[OK]     RevitAPI.dll                           C:\Program Files\Autodesk\Revit 2024\RevitAPI.dll
+[OK]     RevitAPIUI.dll                         C:\Program Files\Autodesk\Revit 2024\RevitAPIUI.dll
+[OK]     AdWindows.dll                          C:\Program Files\Autodesk\Revit 2024\AdWindows.dll
+[OK]     UIFramework.dll                        C:\Program Files\Autodesk\Revit 2024\UIFramework.dll
+[OK]     Revit.exe                              C:\Program Files\Autodesk\Revit 2024\Revit.exe
+[MISS] Revit running                             (cerrarlo si esta antes de re-deploy)
+
+================================================================
+ 2. ENSCAPE
+================================================================
+[OK]   Enscape install                          C:\Program Files\Enscape
+[OK]     Enscape.RendererHost.exe               C:\Program Files\Enscape\RendererHost\Enscape.RendererHost.exe
+[OK]   Enscape Revit 2024 add-in                C:\ProgramData\Autodesk\Revit\Addins\2024\0_Enscape.addin
+
+================================================================
+ 3. DROPBOX + COLA DE RENDER
+================================================================
+[OK]   Dropbox info.json                        C:\Users\Eitan Abaud\AppData\Local\Dropbox\info.json
+
+Cuentas Dropbox configuradas:
+  business   path: C:\Users\Eitan Abaud\Q Dropbox\Eitan Abaud
+
+Buscando cola y skybox library en cada root...
+
+  Root: C:\Users\Eitan Abaud\Q Dropbox\Eitan Abaud
+
+  Root: C:\Users\Eitan Abaud\Q Dropbox
+    [render queue] C:\Users\Eitan Abaud\Q Dropbox\3D Projects\#_RenderServer
+      pending    exists=True  files=1
+      processed  exists=True  files=5
+      failed     exists=True  files=4
+      logs       exists=True  files=1
+    [skybox lib]   C:\Users\Eitan Abaud\Q Dropbox\3D Materials\Skybox Library\Skybox Library V2  (11 files)
+[OK]   Dropbox.exe corriendo                    5980,18436,23636,23720,23832,25432,25576,26280,28160
+
+================================================================
+ 4. RED Y WAKE-ON-LAN
+================================================================
+
+Adapter: Ethernet
+  Description:  Realtek PCIe GbE Family Controller
+  Status:       Up
+  MAC:          9C-2D-CD-09-78-CA
+  LinkSpeed:    1 Gbps
+  IPv4:         192.168.1.133/24
+  (Get-NetAdapterPowerManagement no disponible)
+  [adv] Energy-Efficient Ethernet                     = Enabled
+  [adv] Wake on Magic Packet                          = Enabled
+  [adv] Wake on pattern match                         = Enabled
+  [adv] Shutdown Wake-On-Lan                          = Disabled
+  [adv] WOL & Shutdown Link Speed                     = 10 Mbps First
+
+powercfg /a (estados de power disponibles):
+  The following sleep states are available on this system:
+      Standby (S3)
+      Hibernate
+      Fast Startup
+  
+  The following sleep states are not available on this system:
+      Standby (S1)
+  	The system firmware does not support this standby state.
+  
+      Standby (S2)
+  	The system firmware does not support this standby state.
+  
+      Standby (S0 Low Power Idle)
+  	The system firmware does not support this standby state.
+  
+      Hybrid Sleep
+  	The hypervisor does not support this standby state.
+  
+
+powercfg /lastwake (que desperto a la PC la ultima vez):
+  Wake History Count - 0
+
+powercfg /devicequery wake_armed (dispositivos armados para despertar):
+  HID Keyboard Device (001)
+  Realtek PCIe GbE Family Controller
+  HID Keyboard Device (002)
+  USB4 Root Router (1.0)
+  
+
+powercfg /devicequery wake_from_any (dispositivos con capacidad de wake):
+  HID-compliant vendor-defined device
+  Intel(R) TypeC PCIe - 466E
+  HID-compliant vendor-defined device (001)
+  Bluetooth LE Generic Attribute Service (001)
+  SAMSUNG MZVL21T0HCLR-00BL2
+  Device Information Service
+  Generic Access Profile (001)
+  Bluetooth LE Generic Attribute Service (003)
+  Bluetooth LE Generic Attribute Service (004)
+  JBL Clip 3 Hands-Free
+  Microsoft Wi-Fi Direct Virtual Adapter
+  Microsoft Wi-Fi Direct Virtual Adapter #2
+  USB Input Device
+  Microsoft Bluetooth Enumerator
+  Generic USB Hub (001)
+  HID-compliant touch pad
+  HID Keyboard Device (001)
+  Generic Attribute Profile (001)
+  Standard NVM Express Controller
+  Bluetooth Device (RFCOMM Protocol TDI)
+  Bluetooth Device (Personal Area Network)
+  Eitan's Buds3 Pro Hands-Free
+  Generic Access Profile (002)
+  M720 Triathlon
+  Bluetooth Low Energy GATT compliant HID device
+  Intel(R) PCI Express Root Port #10 - 51B1
+  HID-compliant vendor-defined device (006)
+  Intel(R) PEG62 - 463D
+  Generic Attribute Profile (003)
+  Intel(R) USB 3.10 eXtensible Host Controller - 1.20 (Microsoft)
+  JBL Xtreme 2 Hands-Free
+  Bluetooth Low Energy GATT compliant HID device (001)
+  Redmi Buds 3 Lite Hands-Free
+  Microsoft Input Configuration Device
+  Intel(R) PCI Express Root Port #9 - 51B0
+  Intel(R) PEG60 - 464D
+  HID-compliant consumer control device
+  Realtek PCIe GbE Family Controller
+  Generic SuperSpeed USB Hub (001)
+  HID Keyboard Device (002)
+  Intel(R) Wi-Fi 6E AX211 160MHz
+  HID-compliant vendor-defined device (013)
+  Bose QC35 II Hands-Free
+  USB4 Root Router (1.0)
+  Eitan's Buds3 Pro (002)
+  ACPI Wake Alarm
+  Intel(R) Wireless Bluetooth(R)
+  Eitan's Buds Core Hands-Free
+  USB Input Device (003)
+  USB Input Device (004)
+  HID-compliant consumer control device (001)
+  I2C HID Device (001)
+  USB4 Virtual power coordination device
+  HID-compliant vendor-defined device (016)
+  Eitan's Buds3 Pro (003)
+  Bluetooth LE Generic Attribute Service (019)
+  HID-compliant mouse (002)
+  HID-compliant vendor-defined device (018)
+  USB Composite Device (005)
+  M720 Triathlon (001)
+  Intel(R) USB 3.20 eXtensible Host Controller - 1.20 (Microsoft)
+  USB Root Hub (USB 3.0)
+  Microsoft VHD Loopback Controller
+  Microsoft Bluetooth LE Enumerator
+  USB4(TM) Host Router (Microsoft)
+  WH-CH700N Hands-Free
+  Intel(R) PEG10 - 460D
+  Intelr Smart Sound Technology BUS
+  Realtek(R) Audio
+  Device Information Service (003)
+  USB Root Hub (USB 3.0) (001)
+  HID-compliant wireless radio controls
+  Intelr Smart Sound Technology OED
+  
+
+================================================================
+ 5. POWER PLAN + SLEEP / HIBERNATE
+================================================================
+Active scheme:
+  Power Scheme GUID: 52521609-efc9-4268-b9ba-67dea73f18b2  (Legion Performance Mode)
+[MISS] hiberfil.sys                             C:\hiberfil.sys
+
+================================================================
+ 6. AUTO-LOGIN
+================================================================
+[MISS] AutoAdminLogon                           value = ''
+[MISS] DefaultUserName                          
+[MISS] DefaultDomainName                        
+[MISS] DefaultPassword presente                 (no se imprime el valor)
+
+================================================================
+ 7. STARTUP ITEMS
+================================================================
+
+Registry: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+  SecurityHealth                 = C:\WINDOWS\system32\SecurityHealthSystray.exe
+  RtkAudUService                 = "C:\WINDOWS\System32\DriverStore\FileRepository\realtekservice.inf_amd64_04ff63d068f8c626\RtkAudUService64.exe" -background
+  AdobeAAMUpdater-1.0            = "C:\Program Files (x86)\Common Files\Adobe\OOBE\PDApp\UWA\UpdaterStartupUtility.exe"
+  Autodesk Access                = "C:\Program Files\Autodesk\AdODIS\V1\Access\AdskAccessCore.exe" --minimizedUi --autoLaunch
+  pac                            = C:\Program Files\Autodesk\Personal Accelerator for Revit\RevitAccelerator.exe
+  Autodesk Access Service        = "C:\Program Files\Autodesk\AdODIS\V1\Setup\AdskAccessService.exe" --autoLaunch
+  TechSmithSnagit                = "C:\Program Files\TechSmith\Snagit 2024\SnagitCapture.exe" /i
+  Sentinel Agent                 = "C:\Program Files\SentinelOne\Sentinel Agent 25.2.6.442\SentinelUI.exe" /minimized
+
+Registry: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+  (vacio)
+
+Registry: HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+  Greenshot                      = "C:\Users\Eitan Abaud\AppData\Local\Greenshot\Greenshot.exe"
+  LenovoVantageToolbar           = C:\ProgramData\Lenovo\Vantage\AddinData\LenovoBatteryGaugeAddin\x64\QSHelper.exe
+  Adobe Acrobat Synchronizer     = "C:\Program Files\Adobe\Acrobat DC\Acrobat\AdobeCollabSync.exe"
+  MicrosoftEdgeAutoLaunch_62CFEE773195E51A271C14AA90C295BB = "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --win-session-start
+  SmartConnect                   = "C:\Program Files\Lenovo\Ready For Assistant\SmartConnect.exe" /mode:background /startup
+
+Registry: HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+  (vacio)
+
+Startup folder: C:\Users\Eitan Abaud\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+  desktop.ini
+  Send to OneNote.lnk
+
+Startup folder: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup
+  CCBService.lnk
+  ChaosUnifiedLogin.lnk
+  desktop.ini
+  Start Chaos License Server.lnk
+
+================================================================
+ 8. TASK SCHEDULER
+================================================================
+
+Task: \Microsoft\Windows\InstallService\WakeUpAndContinueUpdates
+  State:    Disabled
+  LastRun:  11/30/1999 12:00:00 AM
+  LastResult: 0x41303
+  NextRun:  
+  Action:    
+
+Task: \Microsoft\Windows\InstallService\WakeUpAndScanForUpdates
+  State:    Disabled
+  LastRun:  11/30/1999 12:00:00 AM
+  LastResult: 0x41303
+  NextRun:  5/1/2026 1:41:49 PM
+  Action:    
+  Trigger:  CimInstance
+
+Task: \SoftLanding\S-1-5-21-4248079118-1694401150-3367846946-1001\SoftLandingTriggerTask-128000000001615609-render-{710e1e0a-b44c-41ee-ae39-7412a9b0e792}
+  State:    Disabled
+  LastRun:  4/30/2026 11:36:19 AM
+  LastResult: 0x0
+  NextRun:  4/30/2026 3:39:19 PM
+  Action:    
+  Trigger:  CimInstance
+
+================================================================
+ 9. ADD-INS DE REVIT 2024
+================================================================
+
+Folder: C:\Users\Eitan Abaud\AppData\Roaming\Autodesk\Revit\Addins\2024
+  EitanSaveTool.addin                         496 B  2026-04-26 11:21
+  EitanSaveTool.dll                         12.5 KB  2026-04-26 11:53
+  QbiqAddin.addin                             483 B  2026-01-15 13:56
+  QbiqRenderDispatcher.addin                  474 B  2026-04-30 10:33
+  RevitAddinManager.addin                     426 B  2026-02-09 13:10
+
+----- EitanSaveTool.addin -----
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>EitanSaveTool</Name>
+    <Assembly>.\EitanSaveTool.dll</Assembly>
+    <AddInId>e481fcd5-abdd-4f83-ad06-f7ab2b5ca13f</AddInId>
+    <FullClassName>EitanSaveTool.App</FullClassName>
+    <Description>Saves the Revit file with the correct name inside the project folder on Dropbox.</Description>
+    <VendorId>Eitan</VendorId>
+    <VendorDescription>Eitan @ Qbiq</VendorDescription>
+  </AddIn>
+</RevitAddIns>
+
+
+----- QbiqAddin.addin -----
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>QbiqAddin</Name>
+    <Assembly>C:\Users\Eitan Abaud\Q Dropbox\R&amp;D\Qbiq Revit Addin\Dev2_2024\qbiqaddin.dll</Assembly>
+    <AddInId>a5f9572f-fffb-4e2d-9a63-8c42e3249edc</AddInId>
+    <FullClassName>QbiqAddin.QbiqTools</FullClassName>
+    <Description>"Qbiq Addin V1"</Description>
+    <VendorId>Qbiq</VendorId>
+    <VendorDescription>
+    </VendorDescription>
+  </AddIn>
+</RevitAddIns>
+
+----- QbiqRenderDispatcher.addin -----
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>qbiq Render Dispatcher</Name>
+    <Assembly>C:\Users\Eitan Abaud\Desktop\SERVER\QbiqRenderDispatcher\bin\Release\QbiqRenderDispatcher.dll</Assembly>
+    <FullClassName>QbiqRenderDispatcher.App</FullClassName>
+    <ClientId>a1b2c3d4-e5f6-7890-abcd-ef1234567890</ClientId>
+    <VendorId>QBIQ</VendorId>
+    <VendorDescription>qbiq.ai</VendorDescription>
+  </AddIn>
+</RevitAddIns>
+
+
+----- RevitAddinManager.addin -----
+<RevitAddIns>
+    <AddIn Type="Application">
+        <Name>AddinManager</Name>
+        <Assembly>RevitAddinManager/RevitAddinManager.dll</Assembly>
+        <FullClassName>RevitAddinManager.App</FullClassName>
+        <AddInId>A7C7965D-E72F-4769-A3AC-BE0C14764BA2</AddInId>
+        <VendorId>ADSK</VendorId>
+        <VendorDescription>Autodesk, https://www.autodesk.com/</VendorDescription>
+    </AddIn>
+</RevitAddIns>
+
+Folder: C:\ProgramData\Autodesk\Revit\Addins\2024
+  0_Enscape.addin                             506 B  2026-04-06 09:36
+  Autodesk.BatchPrint.addin                   627 B  2025-05-12 15:56
+  Autodesk.Collaborate.addin                 1.8 KB  2026-04-13 17:10
+  Autodesk.eTransmitApplication.addin         491 B  2025-05-12 15:57
+  Autodesk.TotalCarbonAnalysis.addin          731 B  2026-04-13 17:19
+  Autodesk.WorksharingMonitor.Application.addin   1.2 KB  2025-05-12 15:56
+  ExportViewSelectorApp.addin                 501 B  2025-09-18 15:26
+  FormItConverter.addin                      1.1 KB  2026-04-13 17:19
+
+----- 0_Enscape.addin -----
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Enscape 4.17.0</Name>
+    <Assembly>C:\Program Files\Enscape\Enscape.Revit.Plugin-net48\Enscape.Revit.Plugin.2024.dll</Assembly>
+    <AddInId>d2bf4759-52b7-4d10-a0dc-e6b8a2f250b3</AddInId>
+    <FullClassName>Enscape.Revit.Plugin.EnscapeRevitPluginWrapper</FullClassName>
+    <VendorId>Chaos</VendorId>
+    <VendorDescription>Chaos Software, www.enscape3d.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
+
+----- Autodesk.BatchPrint.addin -----
+<?xml version='1.0' encoding='utf-8'?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Batch Print</Name>
+    <Assembly>C:\Program Files\Autodesk\Batch Print for Revit 2024\Autodesk.BatchPrint.Application.dll</Assembly>
+    <ClientId>9d508589-48b6-4ff6-a50d-d16d77c585a1</ClientId>
+    <FullClassName>Revit.PrintHarness.PrintHarnessApplication</FullClassName>
+	<VendorId>ADSK</VendorId>
+	<VendorDescription>
+    <![CDATA[https://knowledge.autodesk.com/search?p=REVITPRODUCTS&search=batch%20print&sort=score&page=1&knowledgeSource=Product%20Documentation]]>
+  </VendorDescription>
+  </AddIn>
+</RevitAddIns>
+
+
+----- Autodesk.Collaborate.addin -----
+<?xml version='1.0' encoding='utf-8'?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Collaborate</Name>
+    <Assembly>C:\Program Files\Autodesk\Cloud Models for Revit 2024\Collaborate.dll</Assembly>
+    <AddInId>14F73F04-900E-4E24-8D85-44C71092B6E9</AddInId>
+    <FullClassName>Autodesk.Revit.UI.Collaborate.CollaborateApplication</FullClassName>
+    <VendorId>ADSK</VendorId>
+    <VendorDescription>Autodesk, www.autodesk.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="DBApplication">
+    <Name>CollaborateDB</Name>
+    <Assembly>C:\Program Files\Autodesk\Cloud Models for Revit 2024\CollaborateDB.dll</Assembly>
+    <AddInId>BB3086BE-63BB-44BD-99EB-D584C013CF2F</AddInId>
+    <FullClassName>Autodesk.Revit.UI.Collaborate.CollaborateDBApplication</FullClassName>
+    <VendorId>ADSK</VendorId>
+    <VendorDescription>Autodesk, www.autodesk.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>CollaborateBrowser</Name>
+    <Assembly>C:\Program Files\Autodesk\Cloud Models for Revit 2024\CollaborateBrowser.dll</Assembly>
+    <AddInId>901C7E33-857C-4C9C-846C-8F971C7CF72A</AddInId>
+    <FullClassName>Autodesk.Revit.UI.CollaborateBrowser.CollaborateBrowserApplication</FullClassName>
+    <VendorId>ADSK</VendorId>
+    <VendorDescription>Autodesk, www.autodesk.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>SkyscraperClientHostApplication</Name>
+    <Assembly>C:\Program Files\Autodesk\Cloud Models for Revit 2024\SkyscraperClientHost.dll</Assembly>
+    <ClientId>22F74ACE-E812-4CED-BEF0-7052C755AA2D</ClientId>
+    <FullClassName>SkyscraperClientHost.SkyscraperClientHostApplication</FullClassName>
+	<VendorId>ADSK</VendorId>
+	<VendorDescription>Autodesk, www.autodesk.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
+
+
+----- Autodesk.eTransmitApplication.addin -----
+<?xml version='1.0' encoding='utf-8'?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>eTransmit for Revit</Name>
+    <Assembly>C:\Program Files\Autodesk\eTransmit for Revit 2024\eTransmitForRevit.dll</Assembly>
+    <AddInId>1ee88eb1-b787-425d-8dce-40754b90cbf6</AddInId>
+    <FullClassName>eTransmitForRevit.eTransmitApplication</FullClassName>
+    <VendorId>ADSK</VendorId>
+    <VendorDescription>Autodesk, www.autodesk.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
+
+
+----- Autodesk.TotalCarbonAnalysis.addin -----
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Insights</Name>
+    <Assembly>C:\Program Files\Autodesk\Carbon Insights for Revit 2024\Autodesk.TotalCarbonAnalysis.Application.dll</Assembly>
+    <ClientId>6ADDACBC-45F6-47C0-BD95-43881C2D0D6E</ClientId>
+    <FullClassName>Autodesk.TotalCarbonAnalysis.Application</FullClassName>
+    <Text>Insights</Text>
+    <VendorId>ADSK</VendorId>
+    <VendorDescription>
+      <![CDATA[https://knowledge.autodesk.com/search?p=REVITPRODUCTS&search=Systems%20Analysis&sort=score&page=1&knowledgeSource=Product%20Documentation]]>
+    </VendorDescription>     
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+  </AddIn>
+</RevitAddIns>
+
+
+----- Autodesk.WorksharingMonitor.Application.addin -----
+<?xml version='1.0' encoding='utf-8'?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Worksharing Monitor Application</Name>
+    <Assembly>C:\Program Files\Autodesk\Worksharing Monitor for Revit 2024\Autodesk.WorksharingMonitor.Application.dll</Assembly>
+    <ClientId>04e9bc6c-9b81-4c82-a31a-7559fe7a1579</ClientId>
+    <FullClassName>WorkSharingLib.ExternalApplication</FullClassName>
+	<VendorId>ADSK</VendorId>
+	<VendorDescription><![CDATA[https://knowledge.autodesk.com/search?search=Worksharing%20monitor%20for%20autodesk%20revit&p=REVITPRODUCTS&sort=score]]></VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Worksharing Monitor Launch App</Name>
+    <Assembly>C:\Program Files\Autodesk\Worksharing Monitor for Revit 2024\Autodesk.WorksharingMonitor.Utilities.dll</Assembly>
+    <ClientId>8ed11396-f33d-4378-9b75-fd1874064495</ClientId>
+    <FullClassName>WorksharingCommand.WorksharingApp</FullClassName>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+	<VendorId>ADSK</VendorId>
+	<VendorDescription><![CDATA[https://knowledge.autodesk.com/search?search=Worksharing%20monitor%20for%20autodesk%20revit&p=REVITPRODUCTS&sort=score]]></VendorDescription>
+  </AddIn>
+</RevitAddIns>
+
+
+----- ExportViewSelectorApp.addin -----
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Assembly>.\ExportViewSelectorAddin\ExportViewSelectorAddin.dll</Assembly>
+    <AddInId>78BD1446-1817-4842-8075-591B0424ACAA</AddInId>
+    <FullClassName>Autodesk.Revit.Addin.ExportViewSelector.ExportViewSelectorApp</FullClassName>
+    <Name>Views For A360</Name>
+    <VendorId>ADSK</VendorId>
+    <VendorDescription>Autodesk, www.autodesk.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
+
+----- FormItConverter.addin -----
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>FormIt Conversion</Name>
+    <Assembly>C:\Program Files\Autodesk\FormIt Converter for Revit 2024\FormItConverterRibbon.dll</Assembly>
+    <ClientId>ECCB03C4-B3C3-4C39-868E-5D65D9CE20BD</ClientId>
+    <FullClassName>FormItConverter.Ribbon</FullClassName>
+    <VendorId>ADSK</VendorId>
+    <VendorDescription><![CDATA[https://knowledge.autodesk.com/search?p=REVITPRODUCTS&search=FormIt%20Converter&sort=score&page=1&knowledgeSource=Product%20Documentation]]></VendorDescription>
+  </AddIn>
+   <AddIn Type="DBApplication">
+      <Name>Import AXM</Name>
+      <Assembly>C:\Program Files\Autodesk\FormIt Converter for Revit 2024\AXMImporter.dll</Assembly>
+      <ClientId>50B41C94-1072-4607-8D3C-6ABDBE3BBCC7</ClientId>
+      <FullClassName>AXMImporterWrapper.AXMImporterApp</FullClassName>
+      <VendorId>ADSK</VendorId>
+      <VendorDescription><![CDATA[https://knowledge.autodesk.com/search?p=REVITPRODUCTS&search=FormIt%20Converter&sort=score&page=1&knowledgeSource=Product%20Documentation]]></VendorDescription>
+   </AddIn>
+</RevitAddIns>
+
+
+================================================================
+ 10. .NET SDK / VS (informativo)
+================================================================
+[OK]   dotnet CLI                               C:\Program Files\dotnet\dotnet.exe
+  --version: 10.0.202
+  SDKs:
+    10.0.202 [C:\Program Files\dotnet\sdk]
+[OK]   vswhere.exe                              C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe
+
+================================================================
+ 11. ULTIMAS LINEAS DEL DISPATCH.LOG
+================================================================
+Log: C:\Users\Eitan Abaud\Q Dropbox\3D Projects\#_RenderServer\logs\dispatch.log
+  10:47:18.501  T1  INFO   Coordinator | Settling after VS open: 41/45s elapsed (idle #90560)
+  10:47:18.552  T1  INFO   Coordinator | Settling after VS open: 41/45s elapsed (idle #90640)
+  10:47:18.602  T1  INFO   Coordinator | Settling after VS open: 41/45s elapsed (idle #90720)
+  10:47:18.657  T1  INFO   Coordinator | Settling after VS open: 41/45s elapsed (idle #90800)
+  10:47:18.734  T1  INFO   Coordinator | Settling after VS open: 42/45s elapsed (idle #90880)
+  10:47:18.861  T1  INFO   Coordinator | Settling after VS open: 42/45s elapsed (idle #90960)
+  10:47:18.987  T1  INFO   Coordinator | Settling after VS open: 42/45s elapsed (idle #91040)
+  10:47:19.099  T1  INFO   Coordinator | Settling after VS open: 42/45s elapsed (idle #91120)
+  10:47:19.204  T1  INFO   Coordinator | Settling after VS open: 42/45s elapsed (idle #91200)
+  10:47:19.250  T1  INFO   Coordinator | Settling after VS open: 42/45s elapsed (idle #91280)
+  10:47:19.397  T1  INFO   Coordinator | Settling after VS open: 42/45s elapsed (idle #91360)
+  10:47:19.589  T1  INFO   Coordinator | Settling after VS open: 42/45s elapsed (idle #91440)
+  10:47:19.647  T1  INFO   Coordinator | Settling after VS open: 42/45s elapsed (idle #91520)
+  10:47:19.717  T1  INFO   Coordinator | Settling after VS open: 42/45s elapsed (idle #91600)
+  10:47:19.772  T1  INFO   Coordinator | Settling after VS open: 43/45s elapsed (idle #91680)
+  10:47:19.819  T1  INFO   Coordinator | Settling after VS open: 43/45s elapsed (idle #91760)
+  10:47:19.869  T1  INFO   Coordinator | Settling after VS open: 43/45s elapsed (idle #91840)
+  10:47:19.963  T1  INFO   Coordinator | Settling after VS open: 43/45s elapsed (idle #91920)
+  10:47:20.021  T1  INFO   Coordinator | Settling after VS open: 43/45s elapsed (idle #92000)
+  10:47:20.062  T1  INFO   Coordinator | Settling after VS open: 43/45s elapsed (idle #92080)
+  10:47:20.103  T1  INFO   Coordinator | Settling after VS open: 43/45s elapsed (idle #92160)
+  10:47:20.145  T1  INFO   Coordinator | Settling after VS open: 43/45s elapsed (idle #92240)
+  10:47:20.210  T1  INFO   Coordinator | Settling after VS open: 43/45s elapsed (idle #92320)
+  10:47:20.265  T1  INFO   Coordinator | Settling after VS open: 43/45s elapsed (idle #92400)
+  10:47:20.355  T1  INFO   Coordinator | Settling after VS open: 43/45s elapsed (idle #92480)
+  10:47:20.409  T1  INFO   Coordinator | Settling after VS open: 43/45s elapsed (idle #92560)
+  10:47:20.441  T1  INFO   Coordinator | Settling after VS open: 43/45s elapsed (idle #92640)
+  10:47:20.471  T1  INFO   Coordinator | Settling after VS open: 43/45s elapsed (idle #92720)
+  10:47:20.500  T1  INFO   Coordinator | Settling after VS open: 43/45s elapsed (idle #92800)
+  10:47:20.527  T1  INFO   Coordinator | Settling after VS open: 43/45s elapsed (idle #92880)
+  10:47:20.554  T1  INFO   Coordinator | Settling after VS open: 43/45s elapsed (idle #92960)
+  10:47:20.584  T1  INFO   Coordinator | Settling after VS open: 43/45s elapsed (idle #93040)
+  10:47:20.633  T1  INFO   Coordinator | Settling after VS open: 43/45s elapsed (idle #93120)
+  10:47:20.664  T1  INFO   Coordinator | Settling after VS open: 43/45s elapsed (idle #93200)
+  10:47:20.693  T1  INFO   Coordinator | Settling after VS open: 43/45s elapsed (idle #93280)
+  10:47:20.721  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #93360)
+  10:47:20.752  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #93440)
+  10:47:20.783  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #93520)
+  10:47:20.813  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #93600)
+  10:47:20.845  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #93680)
+  10:47:20.878  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #93760)
+  10:47:20.908  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #93840)
+  10:47:20.935  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #93920)
+  10:47:20.965  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #94000)
+  10:47:20.994  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #94080)
+  10:47:21.022  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #94160)
+  10:47:21.050  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #94240)
+  10:47:21.081  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #94320)
+  10:47:21.110  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #94400)
+  10:47:21.138  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #94480)
+  10:47:21.169  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #94560)
+  10:47:21.199  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #94640)
+  10:47:21.228  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #94720)
+  10:47:21.258  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #94800)
+  10:47:21.322  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #94880)
+  10:47:21.353  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #94960)
+  10:47:21.383  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #95040)
+  10:47:21.410  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #95120)
+  10:47:21.438  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #95200)
+  10:47:21.468  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #95280)
+  10:47:21.497  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #95360)
+  10:47:21.525  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #95440)
+  10:47:21.556  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #95520)
+  10:47:21.587  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #95600)
+  10:47:21.619  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #95680)
+  10:47:21.648  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #95760)
+  10:47:21.678  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #95840)
+  10:47:21.707  T1  INFO   Coordinator | Settling after VS open: 44/45s elapsed (idle #95920)
+  10:47:21.720  T1  INFO   Coordinator | Running render automation (preset/skybox/xml/export). idle #95951, 75s elapsed.
+  10:47:21.726  T1  INFO   EnsureVS | Trying to open Visual Settings panel (up to 12 retries, max ~78s)...
+  10:47:21.729  T1  INFO   EnsureVS | Visual Settings panel is OPEN (attempt 1/12).
+  10:47:26.176  T1  INFO   Coordinator | Preset: OK -> Preset switched to 'Qbiq preset' [verified, settled 3s].
+  10:47:26.185  T1  INFO   EnsureVS | Trying to open Visual Settings panel (up to 12 retries, max ~78s)...
+  10:47:26.189  T1  INFO   EnsureVS | Visual Settings panel is OPEN (attempt 1/12).
+  10:47:44.685  T1  INFO   Coordinator | Skybox: OK -> Skybox loaded: 'Nature_6-19.png' [verified, settled 10s].
+  10:47:57.941  T1  INFO   Coordinator | ViewPath: OK -> View Path XML load triggered: HCP Office - 300 McBee PATH_76400411830001.xml
+  10:48:10.050  T1  INFO   Coordinator | Export: OK -> Video Export triggered. Output target: C:\Users\Eitan Abaud\Q Dropbox\3D Projects\HCP Office - 300 McBee_26344\HCP Office - 300 McBee VIDEO_76400411830001.mp4
+  Enscape is now rendering. You can close this dialog and let it run.
+  2026-04-30 10:48:10 | OK    | HCP Office - 300 McBee_26344_20260430104015800.json | preset=OK -> Preset switched to 'Qbiq | skybox=OK -> Skybox loaded: 'Nature_6 | export=OK -> Video Export triggered. Output target: C:\Us
+  10:48:10.075  T1  INFO   Coordinator | Finalized. ok=True. Ticket dest=C:\Users\Eitan Abaud\Q Dropbox\3D Projects\#_RenderServer\processed\HCP Office - 300 McBee_26344_20260430104015800_OK_20260430_104810.json
+
+================================================================
+ DONE
+================================================================
+
+End of report.
