@@ -20,7 +20,7 @@ Designer PC                    Dropbox                    Render Server
      │                            │                              │
      │                         processed/  ──── done ───────────►│
      │                            │                              │
-     │                         (Slack notification)              │
+     │                    (Slack notification — optional)         │
 ```
 
 ## Roles
@@ -52,7 +52,9 @@ Designer PC                    Dropbox                    Render Server
 2. Open `Run-Setup/Run-Setup-Server.bat` **as Administrator**
 3. Open Revit **as Administrator** → "Render Server" tab → click **GO RENDER SERVER**
 
-See [`Run-Setup/SETUP-SERVER.md`](Run-Setup/SETUP-SERVER.md) for detailed server setup including Slack webhook and junction creation.
+See [`Run-Setup/SETUP-SERVER.md`](Run-Setup/SETUP-SERVER.md) for detailed server setup including junction creation.
+
+> **Slack notifications:** the `SlackNotifier.cs` is fully implemented but the webhook URL is currently empty (`Config.cs` → `SlackWebhookUrl`). To enable: create an incoming webhook in your Slack workspace, paste the URL there, and recompile the server plugin.
 
 ## Ticket schema
 
